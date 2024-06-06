@@ -1,0 +1,244 @@
+NUBEERO 
+
+BROKER PORTAL API 
+
+URL:
+
+CREDIT LIFE BOOKING API
+
+**CREDIT LIFE INDIVIDUAL
+REQUEST
+{
+   "name":"companyname",
+   "value":"",
+   "rcnumber":"",
+   "firstname":"Fred",
+   "lastname":"Blaise",
+   "maritalstatus":"married",
+   "gender":"female",
+   "dateofbirth":"1990-01-01",
+   "idnumber":"KJA3889399",
+   "idtype":"driverlicense",
+   "nationality":"",
+   "employer":"GREENLAND",
+   "occupation":"FRESHMAN",
+   "incomesource":"CASH",
+   "address1":"4 Adebola Arowetan street",
+   "address2":"off Ladejobi way",
+   "city":"Yaba/ Ebute Meta East",
+   "town":"Lagos Mainland",
+   "state":"Lagos",
+   "loanamount":"100000",
+   "loantype":"MORTGAGE LOAN",
+   "loanterm":"48",
+   "medicalhistory":"",
+   "medicalname":"",
+   "medicalphone":"",
+   "medicaldescription":"",
+   "medicaladdress1":"",
+   "medicaladdress2":"",
+   "medicaladdresscity":"",
+   "medicaladdresstown":"",
+   "medicaladdressstate":"",
+   "medicalduration":"",
+   "username":"Akinwale",
+   "brokername":"SCIB NIGERIA & CO. LTD",
+   "brokerid":"434",
+   "product":"CREDITLIFEIND",
+   "insuredname":"Fred Blaise",
+   "productcategory":"CREDITLIFEIND",
+   "description":"CREDITLIFEIND",
+   "risktype":""
+}
+
+RESPONSE
+
+{
+"responsecode":"00",
+"responsemessage":"Policy Submited Succesfully"
+}
+
+**GROUP LIFE INDIVIDUAL
+
+{
+   "name":"membername",
+   "value":"Fred Amosun",
+   "dateofbirth":"1998-10-31",
+   "gender":"female",
+   "annualemolument":"10000",
+   "multiplier":"2",
+   "funeral":"8000",
+   "pd":"1100",
+   "ci":"100",
+   "companyname":"Gred Lakes",
+   "rcnumber":"329000",
+   "dateofincorp":"2001-12-31",
+   "email":"valentine@gmail.com",
+   "phonenumber":"0818-212-0030",
+   "natureofbusiness":"fishing",
+   "tinno":"2983",
+   "businesschannel":"FINANCE",
+   "bankname":"Mutual Trust Microfinance Bank",
+   "memberclass":"senior",
+   "coverperiod":"12",
+   "claimamount":"10000",
+   "claimdeath":"1",
+   "address1":"44 freedom way",
+   "address2":"lekki ph 1",
+   "city":"Lekki",
+   "state":"Lagos",
+   "username":"Akinwale",
+   "brokername":"SCIB NIGERIA & CO. LTD",
+   "brokerid":"434"
+}
+RESPONSE
+{
+"responsecode":"00",
+"responsemessage":"Policy Submited Succesfully"
+}
+
+**MOTOR REQUEST
+
+{
+   "brokerid":"434",
+   "product":"MOTOR",
+   "username":"Akinwale",
+   "firstname":"FRED",
+   "lastname":"ZAINEY",
+   "emailaddress":"valentine.ofili@gmail.com",
+   "phonenumber":"8182120300",
+   "address1":"Feedah avenue",
+   "address2":"off location way",
+   "city":"Lagos Island",
+   "town":"Lagos Island",
+   "state":"Lagos",
+   "proofofownfile":"",
+   "vehiclelicfile":"",
+   "picturefront":"",
+   "picturerear":"",
+   "vehicleusage":"commercial",
+   "registrationno":"KJA345AW",
+   "engineno":"100000000",
+   "chassisno":"10000000",
+   "vehicleyear":"2016",
+   "vehiclemake":"mercedes-benz",
+   "vehiclemodel":"E-Class",
+   "kycfname":"VALENTINE",
+   "kyclname":"OFILI",
+   "idtype":"driverslicense",
+   "idfile":"",
+   "kycformfile":"",
+   "suminsured":"100000",
+   "excessbuyback":"on",
+   "insurancecover":"COMPREHENSIVE"
+}
+RESPONSE
+{
+"responsecode":"00",
+"responsemessage":"Policy Submited Succesfully"
+}
+
+
+CREDIT LIFE BULK QUOTE REQUEST 
+{
+   "username":"Akinwale",
+   "brokerid":"434",
+   "companyname":{
+      
+   },
+   "rcnumber":{
+      
+   },
+   "document":"creditlifefile",
+   "result":[
+      {
+         "sno":1,
+         "membername":"akinwale akinloye",
+         "customertype":"indivdual",
+         "dateofbirth(dd-mon-yyyy)":”2000-07-01”,
+         "loanamount":1000000,
+         "startdate(dd-mon-yyyy)":”2022-02-01”,
+         "maturitydate(dd-mon-yyyy)":”2023-01-31,
+         "tenor":24,
+         "loantype":"SME",
+         "dateofbirth":"1/1/1990",
+         "startdate":"7/9/2021",
+         "maturitydate":"6/9/2023"
+      }
+   ]
+}
+
+GROUP LIFE BULK QUOTE REQUEST   
+{
+   "username":"Akinwale",
+   "brokerid":"434",
+   "companyname":"FRED",
+   "rcnumber":"",
+   "document":"grouplifefile",
+   "result":[
+      {
+         "sno":1,
+         "membername":"FRED GRADLE",
+         "dateofbirth":"1/1/2000",
+         "sex":"M",
+         "annualemolument":6000,
+         "multiplier":3,
+         "funeral":"Y",
+         "funeralvalue":100000,
+         "pd":"Y",
+         "pdvalue":200000,
+         "ci":"Y",
+         "civalue":300000
+      },
+      {
+         "sno":2,
+         "membername":"Blessing Ezenwafor",
+         "dateofbirth":"21/12/2020",
+         "sex":"M",
+         "annualemolument":3000,
+         "multiplier":3,
+         "funeral":"Y",
+         "funeralvalue":10000,
+         "pd":"Y",
+         "pdvalue":100000,
+         "ci":"Y",
+         "civalue":800000
+      },
+      {
+         "sno":3,
+         "membername":"Fred Archibong",
+         "dateofbirth":"9/3/2000",
+         "sex":"F",
+         "annualemolument":1000,
+         "multiplier":3,
+         "funeral":"Y",
+         "funeralvalue":1000,
+         "pd":"Y",
+         "pdvalue":1000,
+         "ci":"Y",
+         "civalue":1000
+      }
+   ]
+}\
+
+
+
+
+
+POLICY NUMBER LOOKUP (This is currently a simulated lookup)
+REQUEST
+{
+	"policynumber"":"OMN8235599000",
+	"requestid":"28837-873662-8377373-0727e83"
+
+}
+
+RESPONSE
+	{
+		"responsecode":"00",
+		"insuredname":"ADEDAYO MUSTAPHA",
+		"policynuber":"OMN8235599000",
+		"coverstart":"2021-02-01",
+		"coverend":"2022-02-01",
+		"product":"FIRE"
+	}
